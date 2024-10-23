@@ -54,4 +54,11 @@ body{
 }
 .player_controls{
     width: 100;
+    margin-top: 1rem;
+    text-align: center;
+    font-size:  2rem;
+    cursor: pointer;
+}
+.player_controls > i:hover{
+    color: #17e417;
 }
