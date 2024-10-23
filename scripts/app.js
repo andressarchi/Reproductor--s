@@ -12,6 +12,8 @@ const playerSong = document.getElementById('playerSong');
 const next = document.getElementById('next');
 const former = document.getElementById('former');
 
+
+
 let currentSongIndex = 0;
 
 // Cargar la canción inicial
@@ -20,6 +22,12 @@ function loadSong(index) {
     album.src = playList[index].img;
     artist.textContent = playList[index].artist;
     playerSong.textContent = playList[index].title;
+    
+    document.body.style.backgroundImage = `url(${playList[index].img})`;
+    document.body.style.backgroundSize = 'cover'; 
+    document.body.style.backgroundPosition = 'center'; 
+
+
 }
 
 // Cargar la primera canción
